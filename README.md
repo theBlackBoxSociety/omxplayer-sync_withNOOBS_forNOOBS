@@ -15,6 +15,7 @@
 * Run Raspbian in desktop mode
 * Open the terminal
 * Give following commands:
+
 `sudo apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus`
 `sudo wget -O /usr/bin/omxplayer-sync https://github.com/turingmachine/omxplayer-sync/raw/master/omxplayer-sync`
 `sudo chmod 0755 /usr/bin/omxplayer-sync`
@@ -46,16 +47,20 @@
 * Power the Pi’s
 * Open the terminal
 * start the master
+
 `omxplayer-sync -muv synctest.mp4`
 * start the slave(s)
+
 `omxplayer-sync -luv synctest.mp4`
 
 ### Play files from USB-sticks
 * Power the pi's
 * Open the terminal an type:
+
 `omxplayer-sync -muv -b local /media/pi/NameOfYourUSB/NameOfYourMovie.mp4`
 * Press enter
 * Open the terminal on the other (slave) Pi’s an type:
+
 `omxplayer-sync -luv -b local /media/pi/NameOfYourUSB/NameOfYourMovie.mp4`
 * Press enter
 
@@ -72,12 +77,19 @@
 ## Options:
 ``
 -h, --help            show this help message and exit
+
 -m, --master          
+
 -l, --slave           
+
 -x DESTINATION, --destination=DESTINATION
+
 -u, --loop            
+
 -v, --verbose         
+
 -o ADEV, --adev=ADEV  
+
 -a ASPECT, --aspect=ASPECT  Aspect Mode - fill, letterbox, stretch``
 
 ## see [here](https://github.com/theBlackBoxSociety/omxplayer-sync) for more
