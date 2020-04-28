@@ -14,7 +14,7 @@
 ### Set-up omxplayer sync
 * Run Raspbian in desktop mode
 * Open the terminal
-* Enter following commands:
+* Enter following commands:  
 `sudo apt-get install libpcre3 fonts-freefont-ttf fbset libssh-4 python3-dbus`  
 `sudo wget -O /usr/bin/omxplayer-sync https://github.com/turingmachine/omxplayer-sync/raw/master/omxplayer-sync`  
 `sudo chmod 0755 /usr/bin/omxplayer-sync`  
@@ -71,7 +71,7 @@
 
 ## Options:
 ``
--h, --help            show this help message and exit  
+-h, --help show this help message and exit  
 -m, --master  
 -l, --slave  
 -x DESTINATION, --destination=DESTINATION  
